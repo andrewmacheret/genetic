@@ -1,0 +1,32 @@
+{
+  "name": "genetic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/babel *.es8 -d .",
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewmacheret/genetic.git"
+  },
+  "author": "Andrew Macheret",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrewmacheret/genetic/issues"
+  },
+  "homepage": "https://github.com/andrewmacheret/genetic#readme",
+  "babel": {
+    "plugins": [
+      "transform-async-to-generator"
+    ]
+  },
+  "dependencies": {
+    "cluster": "^0.7.7"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-async-to-generator": "^6.24.1"
+  }
+}
