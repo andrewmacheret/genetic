@@ -2,10 +2,9 @@
   "name": "genetic",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "bf.js",
   "scripts": {
-    "build": "./node_modules/.bin/babel *.es8 -d .",
-    "test": "node test.js"
+    "start": "node bf.js"
   },
   "repository": {
     "type": "git",
@@ -16,17 +15,5 @@
   "bugs": {
     "url": "https://github.com/andrewmacheret/genetic/issues"
   },
-  "homepage": "https://github.com/andrewmacheret/genetic#readme",
-  "babel": {
-    "plugins": [
-      "transform-async-to-generator"
-    ]
-  },
-  "dependencies": {
-    "cluster": "^0.7.7"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-plugin-transform-async-to-generator": "^6.24.1"
-  }
+  "homepage": "https://github.com/andrewmacheret/genetic#readme"
 }

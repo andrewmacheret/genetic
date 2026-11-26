@@ -4,7 +4,7 @@ const os = require('os');
 
 function startCluster() {
   return new Promise((resolve, reject) => {
-    cluster.setupMaster({
+    cluster.setupPrimary({
       exec: path.resolve(__dirname, 'tester.js')
     });
     const numTesters = os.cpus().length;
